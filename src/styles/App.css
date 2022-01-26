@@ -21,3 +21,39 @@
     justify-content: space-between;
     align-items: center; 
 }
+
+.post-enter {
+    opacity: 0;
+}
+
+.post-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms linear;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms linear;
+}
+
+.page-wrapper {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page {
+    padding: 10px;
+    border: 2px solid teal;
+    cursor: pointer;
+}
+
+.page-current {
+    border: 3px solid orange;
+    font-weight: bold;
+}
